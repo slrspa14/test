@@ -48,21 +48,21 @@
 //         param[i] += add;
 //     }
 // }
-// void Swap(int* ptr1,int *ptr2);
-// int main(void)
-// {
-//     int num1=10;
-//     int num2=20;
-//     printf("num1: %d, num2: %d \n", num1,num2);
+void Swap(int* ptr1,int *ptr2);
+int main(void)
+{
+    int num1=10;
+    int num2=20;
+    printf("num1: %d, num2: %d \n", num1,num2);
 
-//     Swap(&num1,&num2); // 주소값을 보내고
-//     printf("num1: %d, num2: %d\n", num1, num2);
-//     return 0;
-// }
-// void Swap(int* ptr1, int*ptr2) // 받은 주소값을 역참조해서 안에 내용물을 바꿔준다
-// {
-//     int temp;
-//     temp = *ptr1;
-//     *ptr1 = *ptr2;
-//     *ptr2 = temp;
-// }
+    Swap(&num1,&num2); // 주소값을 보내고
+    printf("num1: %d, num2: %d\n", num1, num2);
+    return 0;
+}
+void Swap(int* ptr1, int*ptr2) // 받은 주소값을 역참조해서 안에 내용물을 바꿔준다
+{
+    int temp;
+    temp = *ptr1;
+    *ptr1 = *ptr2;
+    *ptr2 = temp;
+}
